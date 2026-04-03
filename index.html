@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e4e9ea",
+                    "surface-container": "#ebeeef",
+                    "inverse-primary": "#ffffff",
+                    "error-dim": "#5c1202",
+                    "tertiary-fixed": "#ff395a",
+                    "on-surface-variant": "#596061",
+                    "tertiary": "#c00036",
+                    "on-background": "#2d3435",
+                    "primary-fixed-dim": "#d4d4d4",
+                    "error-container": "#fe8b70",
+                    "on-error-container": "#742410",
+                    "secondary-container": "#e5e2e1",
+                    "on-surface": "#2d3435",
+                    "error": "#9e422c",
+                    "on-error": "#fff7f6",
+                    "on-primary-container": "#525252",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-fixed-variant": "#5b5b5b",
+                    "secondary-fixed-dim": "#d6d4d3",
+                    "inverse-surface": "#0c0f0f",
+                    "on-tertiary-container": "#000000",
+                    "on-secondary-fixed": "#403f3f",
+                    "primary-container": "#e2e2e2",
+                    "on-secondary-fixed-variant": "#5c5b5b",
+                    "secondary": "#605f5f",
+                    "on-tertiary-fixed-variant": "#2c0006",
+                    "on-tertiary": "#fff7f6",
+                    "surface-container-low": "#f2f4f4",
+                    "on-primary-fixed": "#3f3f3f",
+                    "primary": "#5e5e5e",
+                    "on-secondary-container": "#525151",
+                    "outline-variant": "#acb3b4",
+                    "surface": "#f9f9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-dim": "#545353",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-variant": "#dde4e5",
+                    "surface-dim": "#d3dbdd",
+                    "primary-dim": "#525252",
+                    "primary-fixed": "#e2e2e2",
+                    "tertiary-dim": "#a9002f",
+                    "tertiary-container": "#ff395a",
+                    "outline": "#757c7d",
+                    "on-primary": "#f8f8f8",
+                    "surface-container-highest": "#dde4e5",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary-fixed": "#000000",
+                    "on-secondary": "#fbf8f8",
+                    "tertiary-fixed-dim": "#ed2a4f",
+                    "inverse-on-surface": "#9c9d9d",
+                    "background": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px currentColor;
+            color: transparent;
+        }
+        .cursor-follow {
+            mix-blend-mode: difference;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-tertiary selection:text-white">
+<!-- Custom Cursor -->
+<div class="fixed top-0 left-0 w-8 h-8 rounded-full border-2 border-tertiary cursor-follow z-[9999] hidden md:block transition-transform duration-100 ease-out"></div>
+<!-- Navigation (Based on {{DATA:COMPONENTS:COMPONENTS_5}}) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-8 py-6 max-w-full mx-auto">
+<div class="text-xl font-black text-stone-900 dark:text-stone-50 uppercase tracking-tighter font-['Epilogue']">
+                Omkar Marennavar
+            </div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-['Epilogue'] font-bold tracking-tight text-stone-900 dark:text-stone-50 border-b-2 border-[#c00036] pb-1" href="#design">Design</a>
+<a class="font-['Epilogue'] font-bold tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#c00036] transition-colors" href="#development">Development</a>
+<a class="font-['Epilogue'] font-bold tracking-tight text-stone-500 dark:text-stone-400 hover:text-[#c00036] transition-colors" href="#about">About</a>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-bold hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform">Say Hello</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center px-8 pt-24 pb-12 overflow-hidden relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative z-10">
+<div class="lg:col-span-8">
+<h1 class="font-headline font-black leading-[0.9] tracking-tighter uppercase mb-6">
+<span class="block text-[12vw] lg:text-[10rem]">Web</span>
+<span class="block text-[12vw] lg:text-[10rem] text-outline">Designer</span>
+<span class="block text-[12vw] lg:text-[10rem] flex items-baseline">
+                            &amp; <span class="text-tertiary ml-4">Developer</span>
+</span>
+</h1>
+<div class="max-w-xl">
+<p class="text-xl font-body text-on-surface-variant leading-relaxed mb-10">
+                            Web Designer | 3D &amp; Interactive Experiences | Creative Digital Solutions. I curate digital spaces where technology meets art.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold flex items-center gap-2 group transition-all duration-300">
+                                View My Work
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/20 px-8 py-4 rounded-lg font-bold text-on-surface hover:bg-surface-container-low transition-colors">
+                                Contact Me
+                            </button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 relative group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden rounded-lg">
+<img alt="Portrait of Omkar Marennavar" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="dramatic black and white portrait of a confident male designer in a studio setting with sharp side lighting and moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKxp6Kt8jwjG2eaV7Yl7mkyyB7Zm1toF2qIEoHYi4gAvtw4l9fkaViieW1J7Z70QYgWygP4fhgGmKlqOhW-E31HCN_mFYgLN-wB8FFXrqr9YILDZ53yG4bijx2lxWXBnxI3SQ7KdebIYWxp0Y6iwwcpz8SUK6ekZ1qnaZaqyI3zCF7T3S96nLemKulyOVh848mS5LztXPg8izaeIKI_Rht-8oN4q6r56sjwSKzT0ubPWSu_-NYwa8TXJZBPjitzOJ3pklsyTUYxRGR"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-tertiary p-6 rounded-lg text-on-tertiary hidden md:block transform -rotate-3 group-hover:rotate-0 transition-transform">
+<span class="font-headline font-bold text-2xl">Digital Architect</span>
+</div>
+</div>
+</div>
+<!-- Decorative Large Text Background -->
+<div class="absolute top-1/2 -right-20 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none">
+<span class="font-headline font-black text-[25rem] leading-none uppercase">OMKAR</span>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="bg-surface-container-low py-32 px-8" id="about">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="font-headline text-5xl font-bold mb-8 tracking-tight">The Visionary<br/><span class="text-tertiary">Behind The Screen</span></h2>
+</div>
+<div class="space-y-8">
+<p class="font-body text-2xl text-on-surface leading-relaxed">
+                        I’m Omkar, a passionate web designer and developer creating immersive 3D and interactive digital experiences. I love blending sleek design with smooth animations to make every project feel alive and premium.
+                    </p>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+                        Code &amp; creativity fuel my designs — from layouts to micro-interactions, I make the web feel alive. I treat every project as a unique piece of digital architecture.
+                    </p>
+<div class="pt-8 flex gap-4">
+<div class="w-12 h-[1px] bg-tertiary mt-3"></div>
+<div>
+<span class="font-label uppercase tracking-widest text-sm font-bold block mb-2">Philosophy</span>
+<span class="italic font-body text-on-surface">"Design is not just what it looks like and feels like. Design is how it works."</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="py-32 px-8 bg-surface" id="development">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-lg font-bold uppercase tracking-[0.3em] text-tertiary mb-16">Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Web Design -->
+<div class="p-8 bg-surface-container-lowest rounded-lg border border-transparent hover:border-tertiary/20 transition-all duration-500 group">
+<span class="material-symbols-outlined text-4xl text-on-surface mb-6">code</span>
+<h3 class="font-headline font-bold text-xl mb-4">Web Design</h3>
+<p class="text-on-surface-variant text-sm mb-6">HTML, CSS, Modern JS, Responsive Layouts</p>
+<div class="h-1 bg-surface-container w-full rounded-full overflow-hidden">
+<div class="h-full bg-secondary group-hover:bg-tertiary transition-all duration-700 w-[95%]"></div>
+</div>
+</div>
+<!-- 3D & Animations -->
+<div class="p-8 bg-surface-container-lowest rounded-lg border border-transparent hover:border-tertiary/20 transition-all duration-500 group">
+<span class="material-symbols-outlined text-4xl text-on-surface mb-6">deployed_code</span>
+<h3 class="font-headline font-bold text-xl mb-4">3D &amp; Animations</h3>
+<p class="text-on-surface-variant text-sm mb-6">Three.js, Blender, GSAP, WebGL</p>
+<div class="h-1 bg-surface-container w-full rounded-full overflow-hidden">
+<div class="h-full bg-secondary group-hover:bg-tertiary transition-all duration-700 w-[85%]"></div>
+</div>
+</div>
+<!-- Creative Tools -->
+<div class="p-8 bg-surface-container-lowest rounded-lg border border-transparent hover:border-tertiary/20 transition-all duration-500 group">
+<span class="material-symbols-outlined text-4xl text-on-surface mb-6">brush</span>
+<h3 class="font-headline font-bold text-xl mb-4">Creative Tools</h3>
+<p class="text-on-surface-variant text-sm mb-6">Figma, Photoshop, After Effects, Development Workflows</p>
+<div class="h-1 bg-surface-container w-full rounded-full overflow-hidden">
+<div class="h-full bg-secondary group-hover:bg-tertiary transition-all duration-700 w-[90%]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32 px-8 bg-surface-container" id="design">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<h2 class="font-headline text-[8vw] md:text-7xl font-black uppercase leading-none">Selected<br/><span class="text-outline">Projects</span></h2>
+<p class="max-w-xs font-body text-on-surface-variant">A curated selection of experiments in 3D interactivity and digital branding.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Project Card 1 -->
+<div class="group relative">
+<div class="aspect-video bg-white overflow-hidden rounded-lg mb-6">
+<img alt="Nike Shoes 3D Showcase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="sleek commercial photography of a red nike sneaker floating in a clean studio environment with dramatic lighting and soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaAhA7yhv7BNRXBqWGQU19DS6_7Fiw3XEFlD6agz2i9QoVl5dzd5kWIz2DgdhT36YZxloxIF4Mfitiq7iZ-hKmvPLp2fcG6HCEHlL_e1GTIPxVQsmrqSresxGbmsYm0FZRgOzWHKzP1TiqY5HoDVd20BNa5SGgFBFp_pJbXUadYzqoGMZ8FHUK1Tq_tNmaKmTJJl2B8eBXWS9Qrtwp0oRFubk-syGTOWU0vNy4i81xphAqNvOKo4ZUqX7mdNhlQEJwZLNn4hVaqm6_"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-2">Nike Shoes 3D Showcase</h3>
+<p class="text-on-surface-variant max-w-sm">A premium landing page featuring interactive 3D models and smooth animations.</p>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold bg-white px-3 py-1 rounded-full">3D • Web Design</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative mt-12">
+<div class="aspect-video bg-white overflow-hidden rounded-lg mb-6">
+<img alt="Etherum Abstract UI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="abstract digital artwork with flowing glass textures and iridescent gradients in deep blues and violets representing crypto technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN9bb10En8LqPXVPRlBQT38-oPRv7nTqjVk_iCDbE9XqFezouwL51NkUzUEfRxQEiDfqzd6qWResTNVWOjKGRpJu7_G8IQWDWRAWqnpV2FUNUFhAKLL90VNXEWdxeqPReHKqHFllZ9IrB9GSbl50RZvPsoPT_hCMkKDXSBtq2QtcElJXkhFBtct9-6JL48peRuVgajJ-n8iXubmglf1g6OI64vsqGOiFBny1fEvJj6ROlvIxWVAorPPKXAu-cwbG1U37fA2iSQfrCu"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-2">Etherum Abstract UI</h3>
+<p class="text-on-surface-variant max-w-sm">Interactive dashboard exploration for a decentralized finance platform.</p>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold bg-white px-3 py-1 rounded-full">Interactive UI</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative">
+<div class="aspect-video bg-white overflow-hidden rounded-lg mb-6">
+<img alt="Architectural Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="minimalist architectural visualization of a brutalist concrete building against a clear blue sky with hard sunlight and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAZf3cfBHWOcLWsYuGjmIKKq6kn3RS9IF1XB9wPL3i3cHAKQ_Wz6BY73cnv7lOyWFqNiuWJxYUbkqJZNKns6J09w3oKFtd-23u6ra6oHhR6v52ErgKx48b3A7ejQTr8aSUNDvI5AEZZ1q5eYpuq1OL--bEU9EV-8jOFZNvaWq_Y9Jbsp7qYGvET5vs9pLJtc4WOKmmplqRRaaZJ_KgAPudKLlpLOzwFPTbekzWANU48tuqDsuX-0sJCFscCpRWxl_Up0i__037ZpXN"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-2">Monolith Spaces</h3>
+<p class="text-on-surface-variant max-w-sm">3D walkthrough experience for a high-end architectural firm.</p>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold bg-white px-3 py-1 rounded-full">3D • Animation</span>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group relative mt-12">
+<div class="aspect-video bg-white overflow-hidden rounded-lg mb-6">
+<img alt="Creative Agency Web" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="clean modernist web interface displayed on a tablet screen with bold typography and asymmetrical layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBQe4aS4073a5k49T-a10yBiXxzJAb0hpxWEbIqPnnJ1bfuooY59fvsLlG6x9vRBXeryQ2RZ0aHUfPqDmDX5xV1Nkh0Utt7P89CG93G5mxg4az8BNih0s_BdaI9N672uFaxn3hne_unMqYUrmXeNC0YNDwBKMfj8mE3ObWRJXJSX1Ed0YON7ymskG3NluOaXuIqdVvNcIPawXUoe3S4eQTSzvVooCatcpR7prm4x25HWT6_g0GTn5m3atHUIJ6dM2_NiO6rDIfV2Pp"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-2">Vision Agency Portfolio</h3>
+<p class="text-on-surface-variant max-w-sm">Bespoke portfolio design for a global creative collective.</p>
+</div>
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold bg-white px-3 py-1 rounded-full">Web Design</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-40 px-8 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-6xl font-bold mb-12 tracking-tight">Let’s craft<br/><span class="text-tertiary italic">the future together.</span></h2>
+<div class="space-y-10">
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-tertiary text-3xl">mail</span>
+<div>
+<span class="font-label uppercase tracking-widest text-xs font-bold block mb-2 opacity-50">Email Me</span>
+<a class="font-headline text-2xl font-bold hover:text-tertiary transition-colors" href="mailto:omkarmarennavaromu@gmail.com">omkarmarennavaromu@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-tertiary text-3xl">call</span>
+<div>
+<span class="font-label uppercase tracking-widest text-xs font-bold block mb-2 opacity-50">Call Me</span>
+<a class="font-headline text-2xl font-bold hover:text-tertiary transition-colors" href="tel:+919538626167">+91 9538626167</a>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<span class="material-symbols-outlined text-tertiary text-3xl">share</span>
+<div>
+<span class="font-label uppercase tracking-widest text-xs font-bold block mb-2 opacity-50">Social</span>
+<a class="font-headline text-2xl font-bold hover:text-tertiary transition-colors" href="#">@07_omya_650</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-12 rounded-lg">
+<form class="space-y-8">
+<div class="space-y-2">
+<label class="font-label uppercase tracking-widest text-xs font-bold opacity-70">Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant/20 py-4 focus:outline-none focus:border-tertiary transition-colors font-body" placeholder="Your Name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label uppercase tracking-widest text-xs font-bold opacity-70">Email</label>
+<input class="w-full bg-transparent border-b border-outline-variant/20 py-4 focus:outline-none focus:border-tertiary transition-colors font-body" placeholder="your@email.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label uppercase tracking-widest text-xs font-bold opacity-70">Message</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant/20 py-4 focus:outline-none focus:border-tertiary transition-colors font-body h-32 resize-none" placeholder="What are we building?"></textarea>
+</div>
+<button class="w-full bg-secondary text-on-secondary py-5 rounded-lg font-bold hover:bg-tertiary transition-all duration-500 uppercase tracking-widest text-sm">
+                                Let’s Collaborate
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Based on {{DATA:COMPONENTS:COMPONENTS_5}}) -->
+<footer class="w-full py-20 px-8 bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-7xl mx-auto">
+<div class="text-lg font-bold text-stone-800 dark:text-stone-200 font-headline uppercase tracking-tighter">
+                Omkar Marennavar
+            </div>
+<p class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400">
+                © 2026 Omkar Marennavar. Crafted with Precision.
+            </p>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-[#c00036] underline-offset-8 decoration-2 hover:underline transition-all duration-500 ease-in-out" href="#">LinkedIn</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-[#c00036] underline-offset-8 decoration-2 hover:underline transition-all duration-500 ease-in-out" href="#">Dribbble</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-[#c00036] underline-offset-8 decoration-2 hover:underline transition-all duration-500 ease-in-out" href="#">Instagram</a>
+<a class="font-['Manrope'] text-sm uppercase tracking-widest text-stone-600 dark:text-stone-400 hover:text-[#c00036] underline-offset-8 decoration-2 hover:underline transition-all duration-500 ease-in-out" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
